@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -15,10 +14,10 @@ public class SceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    void ChangeScene(){
-        
+    public void ChangeScene(string NextScene){
+        SceneManager.LoadScene(NextScene);
     }
 }
