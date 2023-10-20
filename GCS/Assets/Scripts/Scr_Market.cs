@@ -10,8 +10,11 @@ public class Scr_Market : MonoBehaviour
     public GameObject Panel;
     public Text timer;
 
+    public static string mercado;
+
     void Update()
     {
+        mercado = "abierto";
         float minutes = Mathf.FloorToInt(targetTime / 60); 
         float seconds = Mathf.FloorToInt(targetTime % 60);
 
@@ -29,6 +32,7 @@ public class Scr_Market : MonoBehaviour
     void timerEnded()
     {
         Panel.SetActive(false);
+        mercado = "cerrado";
         targetTime = 180.0f;
 
     }
