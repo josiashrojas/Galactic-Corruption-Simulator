@@ -252,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1429288163}
   Panel2: {fileID: 1270641400}
+  Panel3: {fileID: 0}
 --- !u!114 &346220405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1167,7 +1168,7 @@ Canvas:
   m_GameObject: {fileID: 1656483760}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1656,6 +1657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1270641400}
   Panel2: {fileID: 1429288163}
+  Panel3: {fileID: 0}
 --- !u!1 &2128508247
 GameObject:
   m_ObjectHideFlags: 0
