@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21869686, y: 0.92200005}
   m_AnchorMax: {x: 0.31122735, y: 0.97321695}
-  m_AnchoredPosition: {x: -2, y: -0.10501}
+  m_AnchoredPosition: {x: -2, y: -0.10501099}
   m_SizeDelta: {x: 4, y: -2.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292036079
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1429288163}
-  Panel2: {fileID: 0}
+  Panel2: {fileID: 1270641400}
   Panel3: {fileID: 0}
 --- !u!114 &346220405
 MonoBehaviour:
@@ -630,11 +630,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dinero: 0
   PlayerMoney: {fileID: 1045269064}
+  Meteoros: 0
   PlayerMeteors: {fileID: 0}
+  CompleteMissions: 0
   Mission: 
   MissionStatus: 0
   ShowMission: {fileID: 1324667192}
-  Meteoros: 0
 --- !u!1 &809347299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,7 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1413,7 +1414,7 @@ Canvas:
   m_GameObject: {fileID: 1656483760}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1902,7 +1903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Panel2: {fileID: 1429288163}
-  Panel3: {fileID: 835136796}
+  Panel3: {fileID: 0}
 --- !u!1 &2128508247
 GameObject:
   m_ObjectHideFlags: 0
