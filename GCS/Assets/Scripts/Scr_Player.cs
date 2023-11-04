@@ -6,18 +6,54 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    // Cosas del jugador
     public int Dinero;
     public Text PlayerMoney;
+    public int Meteoros;
+    private int contadorMeteoros;
+    public Text PlayerMeteors;
+    
+
+    // Misiones
+    public int CompleteMissions;
+    public string Mission;
+    public bool MissionStatus;
+    public Text ShowMission;
 
     // Start is called before the first frame update
     void Start()
     {
         Dinero = 5000;
+        SetMissions();
+        Meteoros = 0;
+        CompleteMissions = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMoney.text = Dinero.ToString("");
+        PlayerMeteors.text = Meteoros.ToString("");
+        ShowMission.text = Mission;
     }
+
+    void SetMissions()
+    {
+        // Agregar más misiones para que se vaya seleccionando una misión nueva cada vez que se llama la función
+        Mission = "Consigue 20 meteoros grandes";
+        MissionStatus = false;
+    }
+
+    void MissionProgress()
+    {
+        // Dependiendo de la misión esto debera ir variando a lo que se pida en el momento
+        if (!MissionStatus)
+        {
+            contadorMeteoros += 1;
+        }
+        else { 
+            CompleteMissions += 1;
+            SetMissions(); }
+    }
+
 }
