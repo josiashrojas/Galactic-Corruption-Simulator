@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public bool MissionStatus;
     public Text ShowMission;
     public List<string> Misiones;
+    public int MissionCounter;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +60,21 @@ public class Player : MonoBehaviour
         // Dependiendo de la misión esto debera ir variando a lo que se pida en el momento
         if (!MissionStatus)
         {
-            contadorMeteoros += 1;
+            if (Mission == "Consigue 5000 de dinero")
+            {
+                if (MissionCounter == 5000)
+                {
+                    MissionStatus = true;
+                }
+            }
+            else if (Mission == "Consigue 20 meteoros grandes")
+            {
+                if (MissionCounter == 20)
+                {
+                    MissionStatus = true;
+                }
+            }
+
         }
         else
         {
