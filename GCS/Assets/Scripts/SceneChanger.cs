@@ -5,19 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void ChangeScene(string NextScene)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void ChangeScene(string NextScene){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(int.Parse(NextScene));
     }
 }

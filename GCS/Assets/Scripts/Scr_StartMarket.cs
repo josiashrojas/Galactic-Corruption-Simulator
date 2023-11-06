@@ -6,7 +6,7 @@ public class Scr_StartMarket : MonoBehaviour
 {
     public GameObject Panel;
 
-    public void OpenPanel()
+    public void Start()
     {
         if (Panel != null)
         {

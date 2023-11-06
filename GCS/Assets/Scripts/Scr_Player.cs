@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    // Jugador
+    public static Player player;
     // Cosas del jugador
     public int Dinero;
     public Text PlayerMoney;
@@ -29,7 +31,6 @@ public class Player : MonoBehaviour
         SetMissions();
         Meteoros = 0;
         CompleteMissions = 0;
-
     }
 
     // Update is called once per frame
@@ -82,5 +83,4 @@ public class Player : MonoBehaviour
             SetMissions();
         }
     }
-
 }

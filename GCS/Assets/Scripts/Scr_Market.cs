@@ -34,6 +34,7 @@ public class Scr_Market : MonoBehaviour
         Panel.SetActive(false);
         mercado = "cerrado";
         targetTime = 180.0f;
+        SceneChanger.ChangeScene("1");
 
     }
 
