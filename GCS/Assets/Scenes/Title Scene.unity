@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 465624558}
   - component: {fileID: 465624557}
   - component: {fileID: 465624556}
+  - component: {fileID: 465624559}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -357,14 +358,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1073061361}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+        m_MethodName: Salir
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menus Game
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &465624557
@@ -405,6 +406,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465624554}
   m_CullTransparentMesh: 1
+--- !u!114 &465624559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465624554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba49973734bb124f930112a42f89304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +868,7 @@ GameObject:
   - component: {fileID: 1049224012}
   - component: {fileID: 1049224014}
   - component: {fileID: 1049224013}
+  - component: {fileID: 1049224015}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -925,6 +939,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049224011}
   m_CullTransparentMesh: 1
+--- !u!114 &1049224015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049224011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba49973734bb124f930112a42f89304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1073061356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1453,7 @@ GameObject:
   - component: {fileID: 1784994972}
   - component: {fileID: 1784994974}
   - component: {fileID: 1784994973}
+  - component: {fileID: 1784994975}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1498,6 +1525,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784994971}
   m_CullTransparentMesh: 1
+--- !u!114 &1784994975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784994971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba49973734bb124f930112a42f89304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938053695
 GameObject:
   m_ObjectHideFlags: 0
