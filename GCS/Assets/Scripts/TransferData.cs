@@ -6,11 +6,18 @@ using UnityEngine.UI;
 public class TransferData : MonoBehaviour
 {
     public int Dinero;
-    public Text money;
+
+    public string Mision;
+    public Text Money;
     //  Update is called once per frame
+
+    void Start()
+    {
+        Mision = Player.player.Mission;
+        Dinero = Player.player.Dinero;
+    }
     void Update()
     {
-        Dinero = Player.player.Dinero;
-        money.text = Dinero.ToString("");
+        Money.text = Dinero.ToString("");
     }
 }

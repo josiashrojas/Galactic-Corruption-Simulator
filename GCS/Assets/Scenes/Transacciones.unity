@@ -245,7 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dinero: 0
-  money: {fileID: 1595689081}
+  Mision: 
+  Money: {fileID: 1595689081}
 --- !u!4 &703985610
 Transform:
   m_ObjectHideFlags: 0
