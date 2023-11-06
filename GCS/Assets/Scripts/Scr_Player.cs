@@ -26,6 +26,16 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // If there is an instance, and it's not me, delete myself.
+        if (player != null && player != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            player = this;
+        }
+
         Dinero = 5000;
         AddMissions();
         SetMissions();
