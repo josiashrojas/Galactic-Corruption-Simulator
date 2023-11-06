@@ -9,9 +9,9 @@ public class Player : MonoBehaviour
     // Jugador
     public static Player player;
     // Cosas del jugador
-    public int Dinero;
+    public static int Dinero;
     public Text PlayerMoney;
-    public int Meteoros;
+    public static int Meteoros;
     private int contadorMeteoros;
     public Text PlayerMeteors;
 
@@ -91,6 +91,18 @@ public class Player : MonoBehaviour
         {
             CompleteMissions += 1;
             SetMissions();
+        }
+    }
+
+    public static void VariableVariation(string thing, int quantity)
+    {
+        if (thing == "dinero")
+        {
+            Dinero += quantity;
+        }
+        else if (thing == "meteoro")
+        {
+            Meteoros += quantity;
         }
     }
 }

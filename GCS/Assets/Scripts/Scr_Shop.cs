@@ -10,8 +10,8 @@ public class Scr_Shop : MonoBehaviour
     {
         if (thing == "meteoro")
         {
-            Player.player.Meteoros += 1;
-            Player.player.Dinero -= Scr_Prices.Meteor_Price;
+            Player.VariableVariation("meteoro", 1);
+            Player.VariableVariation("dinero", -Scr_Prices.Meteor_Price);
             Scr_Prices.PriceVariation(thing, "buy");
         }
     }
@@ -21,8 +21,8 @@ public class Scr_Shop : MonoBehaviour
     {
         if (thing == "meteoro")
         {
-            Player.player.Meteoros -= 1;
-            Player.player.Dinero += Scr_Prices.Meteor_Price;
+            Player.VariableVariation("meteoro", -1);
+            Player.VariableVariation("dinero", Scr_Prices.Meteor_Price);
             Scr_Prices.PriceVariation(thing, "sell");
         }
     }

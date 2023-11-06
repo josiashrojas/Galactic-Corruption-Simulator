@@ -28,7 +28,7 @@ public class Scr_Prices : MonoBehaviour
         {
             if (tipo == "buy")
             {
-                if (rnd >= 0 && rnd <= 10)
+                if (rnd >= 0 && rnd <= 25)
                 {
                     int rndprice = UnityEngine.Random.Range(1, 100);
                     Meteor_Price += rndprice;
@@ -36,7 +36,7 @@ public class Scr_Prices : MonoBehaviour
             }
             else if (tipo == "sell")
             {
-                if (rnd >= 0 && rnd <= 10)
+                if (rnd >= 0 && rnd <= 25)
                 {
                     int rndprice = UnityEngine.Random.Range(1, 100);
                     Meteor_Price -= rndprice;

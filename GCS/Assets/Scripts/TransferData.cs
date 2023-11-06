@@ -14,10 +14,10 @@ public class TransferData : MonoBehaviour
     void Start()
     {
         Mision = Player.player.Mission;
-        Dinero = Player.player.Dinero;
     }
     void Update()
     {
+        Dinero = Player.Dinero;
         Money.text = Dinero.ToString("");
     }
 }
