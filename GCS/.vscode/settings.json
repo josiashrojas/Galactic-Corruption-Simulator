@@ -56,11 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "GCS.sln",
-    "cSpell.words": [
-        "Behaviour",
-        "Dont",
-        "Mision",
-        "rndprice"
-    ]
+    "dotnet.defaultSolution": "GCS.sln"
 }
