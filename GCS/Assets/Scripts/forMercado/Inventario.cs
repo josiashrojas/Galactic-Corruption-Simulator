@@ -11,12 +11,25 @@ public class Inventario : MonoBehaviour
     GameObject inventarioPrefab;
     [SerializeField]
     GameObject content;
+    [SerializeField]
+    TextMeshProUGUI display;
 
     [SerializeField]
     spawnMercado mercado;
 
     List<Objeto> inventario = new List<Objeto>();
 
+    private void Start()
+    {
+        updateDisplay();
+    }
+
+
+    public void updateDisplay()
+    {
+        updateInventario();
+        display.text = inventario.Count.ToString() + "/" + limiteInventario.ToString();
+    }
 
     public void updateInventario()
     {

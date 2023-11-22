@@ -15,12 +15,16 @@ public class spawnMercado : MonoBehaviour
     GameObject content;
     [SerializeField]
     Inventario inventario;
+    [SerializeField]
+    TextMeshProUGUI dineroDisplay;
+
 
     private List<Objeto> comprados;
 
     // Start is called before the first frame update
     void Start()
     {
+        UpdateDineroDisplay();
         comprados = new List<Objeto>();
         
         foreach(Objeto objeto in objetos)
@@ -30,23 +34,32 @@ public class spawnMercado : MonoBehaviour
             instance.GetComponentInChildren<TextMeshProUGUI>().text = objeto.nombre + "\n$" + objeto.precio.ToString();
             instance.GetComponentInChildren<Button>().onClick.AddListener(() => comprar(objeto));
         }
+
+    }
+
+    public void UpdateDineroDisplay()
+    {
+        dineroDisplay.text = "$" + Player.Dinero;
     }
 
     void comprar(Objeto objeto)
     {
         if (inventario.TieneEspacioDisponible())
         {
+            /*
             if(Player.Dinero >= objeto.precio)
             {
+            }*/
                 Debug.Log("Comprado a "+ objeto.precio.ToString());
                 comprados.Add(objeto);
-                inventario.updateInventario();
+                inventario.updateDisplay();
                 Player.Dinero -= objeto.precio;
-            }
+                UpdateDineroDisplay();
+            /*
             else
             {
                 Debug.Log("No se puede comprar, falta dinero");
-            }
+            }*/
         }
         else
         {
@@ -66,4 +79,5 @@ public class Objeto
 {
     public string nombre;
     public int precio;
+    public string descripcion;
 }
