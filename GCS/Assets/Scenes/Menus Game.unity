@@ -629,9 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9ff7e659adbc144895015018fcd5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dinero: 0
   PlayerMoney: {fileID: 1045269064}
-  Meteoros: 0
   PlayerMeteors: {fileID: 345919451}
   CompleteMissions: 0
   Mission: 
@@ -944,7 +942,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 19
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1261,7 +1259,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
